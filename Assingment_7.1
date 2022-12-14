@@ -1,0 +1,174 @@
+// java using for loop
+
+public class Use_For_Loop
+{
+    public static void main(String[] args)
+    {
+        for(int i = 1; i <= 10; i++)
+        {
+            System.out.println(i);
+        }
+    }
+}
+
+//end
+
+
+
+//java using while loop
+
+public class Print_1_To_10_UsingWhile 
+{
+	public static void main(String args[])
+	{
+
+		int i=1;
+
+		
+		System.out.println("Output is : ");
+
+		while(i<=10)	
+		{
+			System.out.println(i);
+			i++;
+		}
+	}
+}
+
+
+// java using continue
+
+
+class Main {
+  public static void main(String[] args) {
+
+    
+    for (int i = 1; i <= 10; ++i) {
+
+    
+      if (i > 4 && i < 9) {
+        continue;
+      }
+      System.out.println(i);
+    }
+  }
+}
+
+
+
+
+//java using switch statement
+
+
+class Main {
+  public static void main(String[] args) {
+
+    int number = 44;
+    String size;
+
+    
+    switch (number) {
+
+      case 29:
+        size = "Small";
+        break;
+
+      case 42:
+        size = "Medium";
+        break;
+
+      case 44:
+        size = "Large";
+        break;
+
+      case 48:
+        size = "Extra Large";
+        break;
+      
+      default:
+        size = "Unknown";
+        break;
+
+    }
+    System.out.println("Size: " + size);
+  }
+}
+
+
+//java using if...else..
+
+public class IfExample {  
+public static void main(String[] args) {  
+     
+    int age=20;  
+     
+    if(age>18){  
+        System.out.print("Age is greater than 18");  
+    }  
+}  
+}  
+
+
+
+
+// java using recursion
+
+class Factorial {
+
+    static int factorial( int n ) {
+        if (n != 0)  
+            return n * factorial(n-1); 
+        else
+            return 1;
+    }
+
+    public static void main(String[] args) {
+        int number = 4, result;
+        result = factorial(number);
+        System.out.println(number + " factorial = " + result);
+    }
+}
+
+
+
+
+//binary search tree ussing java
+
+public Node search(Node root, int key)
+{
+    // Base Cases: root is null or key is present at root
+    if (root==null || root.key==key)
+        return root;
+ 
+    // Key is greater than root's key
+    if (root.key < key)
+       return search(root.right, key);
+ 
+    // Key is smaller than root's key
+    return search(root.left, key);
+}
+
+// closure in java
+
+
+
+import java.io.*;
+
+interface SalutationInterface {
+    public String salHello();
+}
+ 
+class closure_method {
+ 
+   
+    public static void main(String[] args)
+    {
+        
+        SalutationInterface obj = () ->
+        {
+            return "Hello, GFGians!";
+        };
+
+        System.out.println(obj.salHello());
+    }
+}
